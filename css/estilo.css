@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.contenedor {
+    display: flex;
+    width: 80vw;
+    margin: 10px auto;
+    flex-direction: column;
+
+    gap:25px;
+}
+
+.box1 {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    border : 10px solid black;
+    background-color: #ddd;
+    margin-bottom: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.box1::after{    
+    content: "Sóc un text centrat";
+}
+
+.box2 {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    border : 2px solid black;
+    background-color: #71B7B7;
+     padding: 15px;
+
+}
+
+
+.box2_hijo {
+    display: flex;
+    width: 100%;
+    background-color: #03FFFF;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.box2_hijo::after {
+    content: "Sóc un text centrat a la part inferior";
+}
+
+
+
+.box3 {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    gap:25px;
+
+}
+
+.box3_hijo1 {
+    width: 100%;
+    display: flex;    
+    border : 2px solid black;
+    background-color: #7B71B7;
+     padding: 15px;
+
+}
+
+.box3_nieto1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    background-color: #03A4FF;
+
+}
+
+.box3_nieto1::after{
+    color: #FFF;
+    content: "Sóc un text a l'esquerra";
+}
+
+
+
+.box3_hijo2 {
+    width: 100%;
+    display: flex;    
+    border : 2px solid black;
+    background-color: #8CB771;
+     padding: 15px;
+
+}
+
+.box3_nieto2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #81FF03;
+
+}
+
+.box3_nieto2::after {
+    color: #000;
+    content: "Sóc un text a la dreta";
+}
+
+
+
+
+@media screen and (min-width:360px) and (max-width:751px) {
+    
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    .contenedor {
+        display: flex;
+        width: 80vw;
+        margin: 10px auto;
+        flex-direction: column;
+    
+        gap:25px;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        border : 10px solid black;
+        background-color: #ddd;
+        margin-bottom: 10px;
+    
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    .box1::after{    
+        text-align: center;
+        content: "Sóc un \A text \A centrat";
+        white-space: pre;
+    }
+    
+    .box2 {
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        border : 2px solid black;
+        background-color: #71B7B7;
+         padding: 15px;
+    
+    }
+    
+    
+    .box2_hijo {
+        display: flex;
+        width: 100%;
+        background-color: #03FFFF;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+    
+    .box2_hijo::after {
+        content: "Soc un text a la part \A superior esquerra";
+        white-space: pre;
+    }
+    
+    
+    
+    .box3 {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFF;
+        gap:25px;
+    
+    }
+    
+    .box3_hijo1 {
+        width: 100%;
+        height: 100%;
+        display: flex;    
+        border : 2px solid black;
+        background-color: #7B71B7;
+         padding: 15px;
+    
+    }
+    
+    .box3_nieto1 {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: flex-start;
+        background-color: #03A4FF;
+    
+    }
+    
+    .box3_nieto1::after{
+        color: #FFF;
+        text-align: right;
+        content: "Sóc un text a\A la part superior\A dreta";
+        white-space: pre;
+    }
+    
+    
+    
+    .box3_hijo2 {
+        width: 100%;
+        height: 100%;
+        display: flex;    
+        border : 2px solid black;
+        background-color: #62E810;
+         padding: 15px;
+    
+    }
+    
+    .box3_nieto2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: #81FF03;
+    
+    }
+    
+    .box3_nieto2::after {
+        font-size: 16px;
+        text-align: center;
+        color: #000;
+        content: "Sóc un text centrat a la \Apart inferior";
+        white-space: pre;
+    
+    }
+    
+    
+    
+
+
+}
